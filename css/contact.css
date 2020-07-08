@@ -1,0 +1,67 @@
+.section1
+{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.section1 .colText h3
+{
+	color:#535c68;
+	text-align:left;
+	font-weight:500;
+	font-size:30px;
+}
+.section1 .colText h4
+{
+	color:#535c68;
+	text-align:left;
+	font-weight:500;
+	font-size:20px;
+}
+.section1 .colText h5
+{
+	color:#535c68;
+	font-weight: 300;
+	font-size:14px;
+	text-align:left;
+}
+.section1 .colText h6
+{
+	color:#535c68;
+	font-size:15px;
+	text-align:left;
+	font-weight: 300;
+}
+.section1 .form-style
+{
+	background: transparent;
+	width:500px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color:#535c68;
+	font-size: 15px;
+	margin-bottom: 16px;
+}
+form input
+{
+	height: 45px;
+}
+.section1 .submit
+{
+	margin-top: 20px;
+	width: 90px;
+	border:none;
+	outline:none;
+	height: 40px;
+	color:#fff;
+	font-size:16px;
+	background: green;
+	cursor:pointer;
+	border-radius:20px;
+	border:1px solid green;
+}
+.section1 .submit:hover
+{
+	background: white;
+	color: green;
+}

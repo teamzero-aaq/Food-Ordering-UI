@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Log in | OneClick Pizza</title>
+		<link rel="stylesheet" href="css/login.css" media="screen" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+	
+		<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background:url('images/background.jpg');
+			background-size: cover;
+			font-family: sans-serif;
+			color: #fff;
+			text-align: center;
+		}
+	</style>
+    </head>
+
+    <body>
+
+        <div class="signin">
+		<form method="post" action="home.html">
+			<h2>OneClick Pizza</h2>
+			<p>Username</p>
+			<input type="text" name="uname" placeholder="Username" required />
+			<p>Password</p>
+			<input type="password" name="psw" placeholder="Password" required />
+			<input type="submit" value="Log In" onclick="validateForm();">
+			<a href="#" style=" margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Reset password?</a>
+			<a href="#" style=" margin-left:5px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Forget password?</a>
+			<br /><br />
+			<a href="register.html" style="font-family:'Play', sans-serif;">&nbsp;Don't have account? Sign Up</a>
+			<br /><a href="home.html" style="font-family:'Play', sans-serif;">Go back to home</a>
+
+		</form>
+	</div>
+        
+ 
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
+        <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>     
+        <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
+			<script>
+		function validateForm() {
+        var un = document.loginform.uname.value;
+        var pw = document.loginform.psw.value;
+        var username = "sagar99"; 
+        var password = "dama";
+        if ((un == username) && (pw == password)) {
+		
+            alert ("Login was successful on "+ new Date());
+            window.location.href = "logins.html";
+			 }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+        }
+      }
+		</script>
+
+
+    </body>
+</html>
